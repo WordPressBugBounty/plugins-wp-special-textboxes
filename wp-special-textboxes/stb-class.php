@@ -22,7 +22,7 @@ if (!class_exists("SpecialTextBoxes")) {
 
         public function __construct()
         {
-            define('STB_VERSION', '6.2.2');
+            define('STB_VERSION', '6.2.5');
             define('STB_DB_VERSION', '2.0');
             define('STB_DIR', dirname(__FILE__) . '/');
             define('STB_DOMAIN', 'wp-special-textboxes');
@@ -32,8 +32,6 @@ if (!class_exists("SpecialTextBoxes")) {
 
 
             add_action('wp_enqueue_scripts', array(&$this, 'headerScripts'), 9999999999);
-
-            add_filter('comment_text', 'do_shortcode');
 
             add_shortcode('stextbox', array(&$this, 'doShortcode'));
             add_shortcode('stb', array(&$this, 'doShortcode2'));
@@ -371,7 +369,7 @@ if (!class_exists('special_text') && class_exists('WP_Widget')) {
                     <?php esc_attr_e('Title:', 'wp-special-textboxes'); ?>
                 </label>
                 <input class="widefat" id="<?php echo esc_attr($this->get_field_id('title')); ?>"
-                       name="<?php echo $this->get_field_name('title'); ?>" type="text"
+                       name="<?php echo esc_attr($this->get_field_name('title')); ?>" type="text"
                        value="<?php echo esc_attr__($title); ?>"/>
             </p>
 
@@ -382,7 +380,7 @@ if (!class_exists('special_text') && class_exists('WP_Widget')) {
 
             <p>
                 <label for="<?php echo esc_attr($this->get_field_id('box_id')); ?>">
-                    <?php _e('ID of Box:', 'wp-special-textboxes') ?>
+                    <?php esc_attr_e('ID of Box:', 'wp-special-textboxes') ?>
                 </label>
                 <select class="widefat" id="<?php echo esc_attr($this->get_field_id('box_id')); ?>"
                         name="<?php echo esc_attr($this->get_field_name('box_id')); ?>">

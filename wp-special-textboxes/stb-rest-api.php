@@ -214,11 +214,8 @@ if (!class_exists('StbRestApi')) {
 
         public function getStyles($request): array
         {
-            $filter = (string)$request['filter'];
-            $sqlFilter = '';
-            if ($filter != '0') {
-                $sqlFilter = ($filter == '2') ? ' WHERE st.trash = 1' : ' WHERE st.trash = 0';
-            }
+            $filter = (int)$request['filter'];
+            $sqlFilter = $filter === 0 ? NULL : $filter - 1;
             $data = $this->stbDbTools->getCurrentColors($sqlFilter);
             return ['data' => $data];
         }

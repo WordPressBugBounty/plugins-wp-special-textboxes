@@ -221,7 +221,7 @@ if (!class_exists('StbDefaultThemes')) {
                     'duration' => 500,
                     'caption' => [
                         'font' => [
-                            'fontSize' => 12,
+                            'fontSize' => 0,
                             'fontFamily' => 'Impact, Verdana, Helvetica, Arial, sans-serif',
                         ],
                     ],
@@ -462,7 +462,7 @@ if (!class_exists('StbDefaultThemes')) {
                     'duration' => 500,
                     'caption' => [
                         'font' => [
-                            'fontSize' => 12,
+                            'fontSize' => 0,
                             'fontFamily' => 'Impact, Verdana, Helvetica, Arial, sans-serif',
                         ],
                     ],
@@ -703,7 +703,7 @@ if (!class_exists('StbDefaultThemes')) {
                     'duration' => 500,
                     'caption' => [
                         'font' => [
-                            'fontSize' => 12,
+                            'fontSize' => 0,
                             'fontFamily' => 'Impact, Verdana, Helvetica, Arial, sans-serif',
                         ],
                     ],
@@ -944,7 +944,7 @@ if (!class_exists('StbDefaultThemes')) {
                     'duration' => 500,
                     'caption' => [
                         'font' => [
-                            'fontSize' => 12,
+                            'fontSize' => 0,
                             'fontFamily' => 'Impact, Verdana, Helvetica, Arial, sans-serif',
                         ],
                     ],

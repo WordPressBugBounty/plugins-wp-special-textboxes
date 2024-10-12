@@ -4,7 +4,7 @@ Donate link:  http://www.simplelib.com
 Tags: content, performance, text, info, color
 Requires at least: 5.6
 Tested up to: 6.6
-Stable tag: 6.2.2
+Stable tag: 6.2.5
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -23,7 +23,7 @@ Available languages:
 * Russian
 
 If you have created your own language pack, or have an update of an existing one, you can send **.po** and **.mo files** to me (minimus AT simplelib.com) so that I can bundle it into **Special Text Boxes**.
-
+  
 Real examples of outputs you can see on the [plugin page](http://www.simplelib.com/archives/wordpress-plugin-wp-special-textboxes/)
 
 [Compare feature set](http://stb.simplelib.com/info/compare-stb/) of different editions of the STB plugin and choose exactly what you need.
@@ -39,7 +39,7 @@ Real examples of outputs you can see on the [plugin page](http://www.simplelib.c
 
 = How to insert special text box to post's text? =
 
-Use short codes:
+Use short codes: 
 
 `[stextbox id="ValidID"]Highlighted text here[/stextbox]`
 
@@ -48,18 +48,18 @@ or (for captioned textbox)
 `[stextbox id="ValidID" caption="CaptionText"]Highlighted text here[/stextbox]`
 
 were
-
+ 
 **ValidID** may be: *alert*, *info*, *download*, *grey*, *black*, *warning*, *custom*
 
 **CaptionText** may be: *any text you needed*.
 
 = How to insert special text box to theme file (not to post)? =
 
-Use function **stbHighlightText**:
+Use function **stbHighlightText**: 
 
 `<?php if(function_exists('stbHighlightText')) echo stbHighlightText('Test of function stbHighlightText.', 'warning'); ?>`
 
-defined as
+defined as 
 
 `function stbHighlightText( $content = null, $id = 'warning', $caption = '', $atts = null )`
 
@@ -84,6 +84,8 @@ More about Special Text Boxes usage and customising read on the [plugin page](ht
 
 
 == Changelog ==
+= 6.2.5 =
+* Plugin security improved
 = 6.2.2 =
 * WordPress 6.5 ready
 = 6.2.1 =
@@ -210,7 +212,7 @@ More about Special Text Boxes usage and customising read on the [plugin page](ht
 = 3.4.40 =
 * Font size parameters are added
 * Bug of caption size is eliminated
-* Language pack is updated. Arabic language by [مدونة رسين](http://www.r-sn.com/wp/) is added.
+* Language pack is updated. Arabic language by [مدونة رسين](http://www.r-sn.com/wp/) is added. 
 * Support of text direction is added.
 * Codes are optimised
 = 3.3.35 =
@@ -262,6 +264,10 @@ More about Special Text Boxes usage and customising read on the [plugin page](ht
 * Initial upload
 
 == Upgrade Notice ==
+= 6.2.5 =
+Plugin security improved
+= 6.2.2 =
+WordPress 6.5 ready
 = 6.2.1 =
 WordPress 6.4 ready
 = 6.2 =
@@ -323,30 +329,30 @@ Language pack is updated. Slovak by Branco is added.
 Static Style Sheet mode (CSS mode) is added.
 User Level is changed to Capability.
 = 4.2.70 =
-Bug of STB output function is fixed.
+Bug of STB output function is fixed. 
 = 4.1.69 =
-Some bugs are fixed.
-Control of block's shadow from short codes is added.
-Improvements in the interface of plugin are made.
-Compatibility with "Wordpress Post Tabs" plugin is added.
+Some bugs are fixed. 
+Control of block's shadow from short codes is added. 
+Improvements in the interface of plugin are made. 
+Compatibility with "Wordpress Post Tabs" plugin is added.  
 = 4.0.65 =
-Styles repository is added.
-Javascript drawing mode is added.
-New Styles Editor is added.
-New rules of text blocks drawing are added.
-Some bugs are resolved.
+Styles repository is added. 
+Javascript drawing mode is added. 
+New Styles Editor is added. 
+New rules of text blocks drawing are added. 
+Some bugs are resolved. 
 = 3.10.60 =
 Italian language pack is updated.
 = 3.10.59 =
-Minor bug are fixed.
-Language pack is updated. Turkish by Serhat ESEN is added.
+Minor bug are fixed. 
+Language pack is updated. Turkish by Serhat ESEN is added. 
 = 3.9.57 =
-The amount of the parameters adjusted "on the fly" is increased
-The output html code meets the requirements of the markup validity of Web documents
+The amount of the parameters adjusted "on the fly" is increased 
+The output html code meets the requirements of the markup validity of Web documents 
 = 3.8.55 =
-Now the plugin codes are using Wordpress 3.0+ standards (PHP5 only).
-Wordpress Settings API are used.
-Now the plugin uses "resources saving technology" for saving server resources in blog runtime mode.
+Now the plugin codes are using Wordpress 3.0+ standards (PHP5 only). 
+Wordpress Settings API are used. 
+Now the plugin uses "resources saving technology" for saving server resources in blog runtime mode. 
 = 3.7.52 =
 Language pack is updated. Czech by [Stanislav Čihák](http://www.abacomp.cz/) are added.
 = 3.7.51 =

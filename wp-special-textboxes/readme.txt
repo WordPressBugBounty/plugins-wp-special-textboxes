@@ -3,7 +3,7 @@ Contributors: minimus
 Donate link:  http://www.simplelib.com
 Tags: content, performance, text, info, color
 Requires at least: 5.6
-Tested up to: 6.6
+Tested up to: 6.7
 Stable tag: 6.2.5
 Requires PHP: 7.4
 License: GPLv2 or later

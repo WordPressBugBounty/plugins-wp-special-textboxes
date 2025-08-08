@@ -3,8 +3,8 @@ Contributors: minimus
 Donate link:  http://www.simplelib.com
 Tags: content, performance, text, info, color
 Requires at least: 5.6
-Tested up to: 6.7
-Stable tag: 6.2.5
+Tested up to: 6.8
+Stable tag: 6.2.6
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -84,6 +84,8 @@ More about Special Text Boxes usage and customising read on the [plugin page](ht
 
 
 == Changelog ==
+= 6.2.6 =
+* WordPress 6.8 ready
 = 6.2.5 =
 * Plugin security improved
 = 6.2.2 =

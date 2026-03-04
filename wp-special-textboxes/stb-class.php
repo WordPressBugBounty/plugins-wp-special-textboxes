@@ -22,7 +22,7 @@ if (!class_exists("SpecialTextBoxes")) {
 
         public function __construct()
         {
-            define('STB_VERSION', '6.2.6');
+            define('STB_VERSION', '6.5');
             define('STB_DB_VERSION', '2.0');
             define('STB_DIR', dirname(__FILE__) . '/');
             define('STB_DOMAIN', 'wp-special-textboxes');
@@ -32,6 +32,8 @@ if (!class_exists("SpecialTextBoxes")) {
 
 
             add_action('wp_enqueue_scripts', array(&$this, 'headerScripts'), 9999999999);
+
+            add_filter('comment_text', 'do_shortcode');
 
             add_shortcode('stextbox', array(&$this, 'doShortcode'));
             add_shortcode('stb', array(&$this, 'doShortcode2'));

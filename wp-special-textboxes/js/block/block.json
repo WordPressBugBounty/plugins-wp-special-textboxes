@@ -1,8 +1,8 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
-  "apiVersion": 2,
+  "apiVersion": 3,
   "name": "wp-special-textboxes/stb-block",
-  "version": "6.0.0",
+  "version": "6.5.1",
   "title": "Special Text",
   "category": "text",
   "icon": "bell",

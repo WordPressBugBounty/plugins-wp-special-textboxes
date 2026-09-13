@@ -1,10 +1,10 @@
 ﻿=== Special Text Boxes ===
 Contributors: minimus
-Donate link:  http://www.simplelib.com
+Donate link: http://www.simplelib.com
 Tags: content, performance, text, info, color
 Requires at least: 5.6
-Tested up to: 7.0
-Stable tag: 6.5.1
+Tested up to: 7.1
+Stable tag: 6.6.1
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -84,6 +84,9 @@ More about Special Text Boxes usage and customising read on the [plugin page](ht
 
 
 == Changelog ==
+= 6.6.1 =
+* WordPress 7.1 ready
+* Minor fixes
 = 6.5.1 =
 * WordPress 7.0 ready
 = 6.5 =
@@ -275,6 +278,8 @@ More about Special Text Boxes usage and customising read on the [plugin page](ht
 * Initial upload
 
 == Upgrade Notice ==
+= 6.6.1 =
+WordPress 7.1 ready. Minor fixes
 = 6.5.1 =
 WordPress 7.0 ready
 = 6.5 =

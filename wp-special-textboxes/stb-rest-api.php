@@ -25,7 +25,7 @@ if (!class_exists('StbRestApi')) {
         public function setAdminRoutes(): void
         {
             // ** SETTINGS ROUTE START **
-            register_rest_route(routeNamespace, '/admin/settings', [
+            register_rest_route('stb/v6', '/admin/settings', [
                 [
                     'methods' => WP_REST_Server::READABLE,
                     'callback' => [$this, 'getSettings'],
@@ -39,7 +39,7 @@ if (!class_exists('StbRestApi')) {
             // ** SETTINGS ROUTE END **
 
             // ** STYLES ROUTE START **
-            register_rest_route(routeNamespace, '/admin/styles/(?P<filter>\d+)', [
+            register_rest_route('stb/v6', '/admin/styles/(?P<filter>\d+)', [
                 'methods' => WP_REST_Server::READABLE,
                 'callback' => [$this, 'getStyles'],
                 'permission_callback' => [$this, 'adminAccess'],
@@ -56,7 +56,7 @@ if (!class_exists('StbRestApi')) {
             // ** STYLES ROUTE END **
 
             // ** COLORS ROUTE START **
-            register_rest_route(routeNamespace, '/admin/colors/(?P<slug>\S+)', [
+            register_rest_route('stb/v6', '/admin/colors/(?P<slug>\S+)', [
                 [
                     'methods' => WP_REST_Server::READABLE,
                     'callback' => [$this, 'getColors'],
@@ -101,7 +101,7 @@ if (!class_exists('StbRestApi')) {
             // ** COLORS ROUTE END **
 
             // ** THEMES ROUTE START **
-            register_rest_route(routeNamespace, '/admin/themes', [
+            register_rest_route('stb/v6', '/admin/themes', [
                 'methods' => WP_REST_Server::READABLE,
                 'callback' => [$this, 'getThemesInfo'],
                 'permission_callback' => [$this, 'adminAccess'],
@@ -124,7 +124,7 @@ if (!class_exists('StbRestApi')) {
             // ** THEMES ROUTE END **
 
             // ** SYSINFO ROUTE START **
-            register_rest_route(routeNamespace, '/admin/sysinfo', [
+            register_rest_route('stb/v6', '/admin/sysinfo', [
                 'methods' => WP_REST_Server::READABLE,
                 'callback' => [$this, 'getSysInfo'],
                 'permission_callback' => [$this, 'adminAccess'],
@@ -140,7 +140,7 @@ if (!class_exists('StbRestApi')) {
             // ** LOCALIZATION ROUTE END **
 
             // ** CLIENT SIDE THEME REQUEST START **
-            register_rest_route(routeNamespace, '/theme/(?P<slug>\S+)', [
+            register_rest_route('stb/v6', '/theme/(?P<slug>\S+)', [
                 'methods' => WP_REST_Server::READABLE,
                 'callback' => [$this, 'getTheme'],
                 'permission_callback' => '__return_true',
